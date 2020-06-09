@@ -1,0 +1,25 @@
+
+// Express precisa ser instalado em dev para typescript com comando @types/express -D
+// Quando for para prod, vai em Js nativo, não precisa da dependência de tipagem.
+// Instalo ts-node -D
+// npm i typescript -D para npx ts-node src/server.ts
+// npx tsc --init
+// npm ts-node src/server.ts - Inicia o servidor.
+
+
+// Uso para o express entender os corpos como json
+
+// Rota: endereço completo da aplicação;
+// Recurso: Qual entidade estamos acessando o sistema;
+
+// Get: Buscar uma informação.
+// Post: Criar uma informação.
+// PUT: Atualizar uma informação.
+// DELETE: Excluir uma informação.
+
+// Request Params: Parâmetros que vem na rota obrigatórios.
+// Query Param: Vem na rota e são opcionais.
+// Request body: Parâmetros para Criação/atualização de informações.
+
+// SELECT * FROM USERS WHERE NAME = 'DIEGO'
+// Query builder - knex('users').where('name','Diego').select('*') -- Consulta com javascript.
